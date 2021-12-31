@@ -1,0 +1,26 @@
+
+<div class="container">
+
+  <div>
+    <h1 class="display-4">My Sent Requests</h1>
+  </div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Mobile number</th>
+      <th>Status</th>
+      <th>From company</th>
+      <th>To Company</th>
+      <th >request Date</th>     
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let request of requests">
+      <td>{{request.phoneNumber}}</td>
+      <td>{{request.status}}</td>
+      <td>{{request.fromOrganization.name}}</td>
+      <td>{{request.toOrganization.name}}</td>
+      <td>{{request.requestDate | date}}</td>
+  </tbody>
+</table>
+</div>

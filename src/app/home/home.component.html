@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Hello {{ user.userName }} From {{ user.organization.name }}</h1>
+  <a class="btn btn-success btn-lg" routerLink="requests">Show All Accepted Requests </a>
+  <hr />
+  <a class="btn btn-primary btn-lg" routerLink="add">Make new Request </a>
+  <hr />
+  <a class="btn btn-warning text-dark btn-lg" routerLink="pendingRequests">My waiting Requests
+  </a>
+  <hr />
+  <a class="btn btn-dark btn-lg" routerLink="sentRequests">My Sent Requests </a>
+</div>

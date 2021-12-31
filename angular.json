@@ -57,11 +57,13 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Mobile-Number-Portability-angular:build"
+            "browserTarget": "Mobile-Number-Portability-angular:build",
+             "proxyConfig": "src/proxy.conf.json"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Mobile-Number-Portability-angular:build:production"
+              "browserTarget": "Mobile-Number-Portability-angular:build:production",
+              "proxyConfig": "src/proxy.conf.json"
             }
           }
         },
@@ -116,4 +118,5 @@
       }
     }},
   "defaultProject": "Mobile-Number-Portability-angular"
+  
 }
